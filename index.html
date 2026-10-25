@@ -75,7 +75,7 @@ h1 { font-family:var(--site-font-heading); font-size:calc(clamp(38px, 5vw, 63px)
 .search-submit { align-self:end; min-height:43px; }
 .section { padding:86px 0; }
 .section-head { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:30px; }
-.kicker { color:#AA771C; font-size:18px; letter-spacing:.15em; text-transform:uppercase; font-weight:800; }
+.kicker { color:#a87b35; font-size:10px; letter-spacing:.15em; text-transform:uppercase; font-weight:800; }
 h2 { font-size:calc(clamp(28px, 3vw, 39px) * var(--site-heading-scale)); letter-spacing:-.045em; line-height:1.15; margin:10px 0 0; }
 .section-desc { max-width:440px; font-size:15px; color: #17182b; line-height:1.7; margin:12px 0 0; }
 .section-cont { max-width:440px; font-size:15px; color: #fcfcfc; line-height:1.7; margin:12px 0 0; }
@@ -105,6 +105,17 @@ h2 { font-size:calc(clamp(28px, 3vw, 39px) * var(--site-heading-scale)); letter-
 .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
 .stat { border-right:1px solid #d8ddd3; padding-left:22px; }.stat:first-child { padding-left:20; }.stat:last-child { border:0; }
 .stat strong { font-size:30px; letter-spacing:-.04em; display:block; }.stat span { font-size:11px; color:#66766d; }
+.about-section { background:#f7f8fa; color:#101a2a; padding:86px 0; }
+.about-layout { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
+.about-copy h2 { color:#101a2a; max-width:700px; }
+.about-copy .about-lead { color:#064fa8; font-size:clamp(20px,2.5vw,29px); line-height:1.35; font-weight:800; margin:20px 0 16px; }
+.about-copy p { color:#596779; font-size:14px; line-height:1.85; }
+.about-values { background:#fff; border:1px solid #dce1e8; padding:clamp(24px,4vw,38px); box-shadow:0 18px 45px rgba(8,25,55,.07); }
+.about-values .about-mark { color:#064fa8; font-size:12px; font-weight:900; letter-spacing:.18em; }
+.about-values h3 { color:#101a2a; font-size:23px; margin:14px 0; }
+.about-values p { color:#596779; font-size:13px; line-height:1.8; }
+.about-legal { border-top:1px solid #dce1e8; margin-top:22px; padding-top:18px; color:#596779; font-size:12px; line-height:1.8; overflow-wrap:anywhere; }
+.about-legal strong { display:block; color:#101a2a; margin-bottom:6px; }
 .process { background:var(--surface); }
 .process-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:38px; }
 .process-card { border-top:2px solid var(--site-secondary); padding-top:20px; }
@@ -146,17 +157,17 @@ h2 { font-size:calc(clamp(28px, 3vw, 39px) * var(--site-heading-scale)); letter-
 .offers-section { padding:76px 0; background:#f4f5f7; color:#101a2a; }
 .offer-card { display:grid; grid-template-columns:1.05fr .95fr; overflow:hidden; border:1px solid #dce1e8; background:#fff; box-shadow:0 18px 45px rgba(8,25,55,.08); }
 .offer-copy { padding:clamp(25px,5vw,58px); display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
-.offer-label { display:inline-block; padding:7px 11px; background:#064fa8; color:#fff; font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
-.offer-copy h2 { color:#064fa8; font-size:clamp(30px,4vw,48px); line-height:1.05; margin:19px 0 12px; letter-spacing:-.04em; }
+.offer-label { display:inline-block; padding:7px 11px; background:var(--site-primary); color:#fff; font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.offer-copy h2 { color:var(--site-primary); font-size:clamp(30px,4vw,48px); line-height:1.05; margin:19px 0 12px; letter-spacing:-.04em; }
 .offer-copy h3 { color:#e53e43; font-size:clamp(23px,3vw,34px); line-height:1.15; margin:0 0 16px; }
 .offer-copy p { color:#46566b; line-height:1.7; font-size:14px; margin:0 0 23px; }
 .offer-conditions { margin-top:17px; color:#65758b; font-size:10px; line-height:1.7; }
-.offer-art { min-height:340px; background:#064fa8; display:flex; align-items:center; justify-content:center; padding:32px; position:relative; }
+.offer-art { min-height:340px; background: var(--site-primary); display:flex; align-items:center; justify-content:center; padding:32px; position:relative; }
 .offer-art-inner { width:100%; max-width:380px; color:#fff; text-align:center; }
 .offer-house { width:84px; height:84px; margin:0 auto 22px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.65); border-radius:50%; font-size:39px; background-color: var(--site-primary); }
 .offer-art-inner strong { display:block; font-size:clamp(23px,3vw,36px); line-height:1.12; letter-spacing:.04em; }
 .offer-art-inner span { display:block; margin-top:14px; color:#dceaff; font-size:12px; line-height:1.6; }
-.offer-art-inner .offer-accent { color:#f36161; font-size:21px; font-weight:800; margin-top:19px; }
+.offer-art-inner .offer-accent { color:#e53e43; font-size:21px; font-weight:800; margin-top:19px; }
 .delete-property { border:1px solid #754444; color:#e33333; background:transparent; padding:7px 9px; cursor:pointer; font-size:10px; margin-top:12px; }
 .contact-section { background:#eeeeef; color:#080912; padding:92px 0 80px; }
 .address-section { background:#f7f8fa; color:#101a2a; padding:76px 0; }
@@ -190,8 +201,10 @@ h2 { font-size:calc(clamp(28px, 3vw, 39px) * var(--site-heading-scale)); letter-
 .admin-gate h3 { margin-top:0; }
 .admin-note { color:#aaa9bd; font-size:12px; line-height:1.65; }
 @media(max-width:700px) { .contact-layout { grid-template-columns:1fr; gap:42px; }.contact-list { gap:26px; }.contact-section { padding:65px 0; }.contact-section h2 { margin:18px 0 22px; }.whatsapp-float { width:58px; height:58px; left:16px; bottom:16px; } }
+@media(max-width:760px) { .about-section { padding:62px 0; }.about-layout { grid-template-columns:1fr; gap:28px; } }
+@media(max-width:760px) { .address-layout { grid-template-columns:1fr; gap:20px; }.address-copy { padding:0; }.address-card { padding:18px; }.address-card .address-map,.address-card .address-map iframe { min-height:280px; } }
 @media (max-width:850px) { .nav-links { gap:15px; }.nav-links a:nth-child(2),.nav-links a:nth-child(3) { display:none; }.hero-grid { grid-template-columns:1fr; gap:18px; padding:58px 0 65px; }.hero-art { min-height:300px; max-width:520px; width:100%; margin:auto; }.art-main { height:270px; }.property-grid { grid-template-columns:repeat(2,1fr); }.search-grid { grid-template-columns:repeat(2,1fr); }.search-submit { width:100%; }.stats-grid { grid-template-columns:repeat(2,1fr); row-gap:28px; }.stat:nth-child(2) { border:0; }.process-grid { gap:18px; }.manage-form { grid-template-columns:repeat(2,minmax(0,1fr)); }.contact-grid { grid-template-columns:1fr; }.offer-card { grid-template-columns:1fr; }.offer-art { min-height:270px; } }
-@media (max-width:560px) { .wrap { width:calc(100% - 32px); }.topbar-inner { justify-content:center; text-align:center; }.topbar-inner span:last-child { display:none; }.nav-inner { min-height:66px; }.brand { font-size:18px; }.nav-links { display:none; }.nav-inner > .btn { padding:11px 13px; font-size:11px; }.hero-grid { padding:48px 0 57px; }.hero p { font-size:14px; }.hero-art { min-height:250px; }.art-main { width:85%; height:225px; }.art-mini { width:280px; padding:12px; }.art-label { bottom:0; }.search-section { margin-top:-24px; }.search-box { padding:17px; }.search-grid { grid-template-columns:1fr; }.section { padding:60px 0; }.section-head { display:block; }.section-head > .btn { margin-top:18px; }.property-grid { grid-template-columns:1fr; }.property-visual { height:210px; }.stats-grid { gap:22px 10px; }.stat { padding-left:12px; }.stat strong { font-size:25px; }.process-grid { grid-template-columns:1fr; gap:26px; }.cta-inner { display:block; }.cta-inner .btn { margin-top:12px; }.footer-inner { align-items:flex-start; flex-direction:column; }.footer-links { flex-wrap:wrap; }.manage-form { grid-template-columns:1fr; }.manage-form .wide { grid-column:auto; }.manage-actions { grid-column:auto; } }
+@media (max-width:560px) { .wrap { width:calc(100% - 32px); }.topbar-inner { justify-content:center; text-align:center; }.topbar-inner span:last-child { display:none; }.nav-inner { min-height:66px; }.brand { font-size:18px; }.nav-links { display:none; }.nav-inner > .btn { padding:11px 13px; font-size:11px; }.hero-grid { padding:48px 0 57px; }.hero p { font-size:14px; }.hero-art { min-height:250px; }.art-main { width:85%; height:225px; }.art-mini { width:135px; padding:12px; }.art-label { bottom:0; }.search-section { margin-top:-24px; }.search-box { padding:17px; }.search-grid { grid-template-columns:1fr; }.section { padding:60px 0; }.section-head { display:block; }.section-head > .btn { margin-top:18px; }.property-grid { grid-template-columns:1fr; }.property-visual { height:210px; }.stats-grid { gap:22px 10px; }.stat { padding-left:12px; }.stat strong { font-size:25px; }.process-grid { grid-template-columns:1fr; gap:26px; }.cta-inner { display:block; }.cta-inner .btn { margin-top:12px; }.footer-inner { align-items:flex-start; flex-direction:column; }.footer-links { flex-wrap:wrap; }.manage-form { grid-template-columns:1fr; }.manage-form .wide { grid-column:auto; }.manage-actions { grid-column:auto; } }
 </style>
 </head>
 <body>
@@ -231,34 +244,25 @@ h2 { font-size:calc(clamp(28px, 3vw, 39px) * var(--site-heading-scale)); letter-
             <img class="property-photo"
              src=""
              alt="Fachada de la casa">
-
             <img class="property-photo"
-              src="imagenes/casa-sala.jpg"
+              src="P1-1.png"
              alt="Sala de la casa">
-
             <img class="property-photo"
-             src="imagenes/casa-cocina.jpg"
+             src="P1-2.png"
              alt="Cocina de la casa">
-
             <img class="property-photo"
-             src="imagenes/casa-habitacion.jpg"
+             src="P1-3.png"
              alt="Habitación de la casa">
-
             <span class="pill">Oportunidad destacada</span>
-          </div><div class="property-info"><div class="location">⌖ Ciudad de México · Zona residencial</div><h3>Departamento con gran potencial</h3><div class="price-row"><div class="price">$1,850,000 <small>MXN · Precio ilustrativo</small></div><a class="card-link" href="#contacto" data-property="Departamento con gran potencial">Consultar ↗</a></div><div class="details"><span>▦ 2 recámaras</span><span>▣ 1 baño</span><span> ⌂ 68 m²</span></div></div></article>
+          </div><div class="property-info"><div class="location">⌖ Ciudad de México · Zona residencial</div><h3>Departamento con gran potencial</h3><div class="price-row"><div class="price">$1,850,000 <small>MXN · Precio ilustrativo</small></div><a class="card-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=alianzadigitalvendeo%40gmail.com" data-property="Departamento con gran potencial">Consultar ↗</a></div><div class="details"><span>▦ 2 recámaras</span><span>▣ 1 baño</span><span> ⌂ 68 m²</span></div></div></article>
       <article class="property-card" data-location="Guadalajara" data-kind="Casa" data-price="2650000"><div class="property-visual has-photo"><img class="property-photo" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" alt="Casa moderna con jardín" loading="lazy"><span class="pill">Casa</span></div><div class="property-info"><div class="location">⌖ Guadalajara · Zona urbana</div><h3>Casa para proyecto patrimonial</h3><div class="price-row"><div class="price">$2,650,000 <small>MXN · Precio ilustrativo</small></div><a class="card-link" href="#contacto" data-property="Casa para proyecto patrimonial">Consultar ↗</a></div><div class="details"><span>▦ 3 recámaras</span><span>▣ 2 baños</span><span>⌂ 105 m²</span></div></div></article>
       <article class="property-card" data-location="Monterrey" data-kind="Residencial" data-price="980000"><div class="property-visual has-photo"><img class="property-photo" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85" alt="Casa residencial moderna" loading="lazy"><span class="pill">Residencial</span></div><div class="property-info"><div class="location">⌖ Monterrey · Sector residencial</div><h3>Inmueble con potencial de valorización</h3><div class="price-row"><div class="price">$980,000 <small>MXN · Precio ilustrativo</small></div><a class="card-link" href="#contacto" data-property="Inmueble con potencial de valorización">Consultar ↗</a></div><div class="details"><span>▦ 2 recámaras</span><span>▣ 1 baño</span><span>⌂ 74 m²</span></div></div></article>
         
       <div class="no-results" id="noResults">No encontramos propiedades con esos filtros. Prueba con otra combinación.</div>
       </div>
     </div></section>
-     <section class="offers-section" id="ofertas"><div class="wrap"><div class="section-head"><div><span class="kicker">Promociones y anuncios</span><h2 style="color:#101a2a">Oportunidades por tiempo limitado</h2><p class="section-desc" style="color:#596779">Consulta las promociones vigentes y pregunta por las viviendas participantes.</p></div></div><article class="offer-card"><div class="offer-copy"><span class="offer-label">Promoción especial</span><h2>¡Promoción por tiempo limitado!</h2><h3>Escrituración gratis*</h3><p>Da el siguiente paso hacia tu nueva vivienda. Pregunta a nuestro equipo por las propiedades participantes y las condiciones de esta promoción.</p><a class="btn" style="background:#064fa8;color:#fff" href="#contacto">Consultar promoción <span aria-hidden="true">↗</span></a><div class="offer-conditions">*Promoción válida solo en viviendas seleccionadas. No incluye impuestos. Sujeta a cambio sin previo aviso. Aplican restricciones.</div></div><div class="offer-art" aria-label="Anuncio de promoción inmobiliaria"><div class="offer-art-inner"><div class="offer-house" aria-hidden="true"><img src="LOGO.png" width="50"></div><strong>A.D.V<br>INMOBILIARIA</strong><span>Seriedad · Profesionalismo · Experiencia</span><span class="offer-accent">ESCRITURACIÓN GRATIS*</span></div></div></article></div></section>
-    <section class="stats" id="nosotros"><div class="wrap stats-grid">
-      <div class="stat"><strong>01</strong><span>Asesoría centrada en tus objetivos</span></div>
-      <div class="stat"><strong>100%</strong><span>Información clara en cada etapa</span></div>
-      <div class="stat"><strong>360°</strong><span>Visión integral de cada oportunidad</span></div>
-      <div class="stat"><strong>Contigo</strong><span>Acompañamiento durante el proceso</span></div>
-    </div></section>
+     <section class="offers-section" id="ofertas"><div class="wrap"><div class="section-head"><div><span class="kicker">Promociones y anuncios</span><h2 style="color:#101a2a">Oportunidades por tiempo limitado</h2><p class="section-desc" style="color:#596779">Consulta las promociones vigentes y pregunta por las viviendas participantes.</p></div></div><article class="offer-card"><div class="offer-copy"><span class="offer-label">Promoción especial</span><h2>¡Promoción por tiempo limitado!</h2><h3>Escrituración gratis*</h3><p>Da el siguiente paso hacia tu nueva vivienda. Pregunta a nuestro equipo por las propiedades participantes y las condiciones de esta promoción.</p><a class="btn" style="background:var(--site-primary);color:#fff" href="#contacto">Consultar promoción <span aria-hidden="true">↗</span></a><div class="offer-conditions">*Promoción válida solo en viviendas seleccionadas. No incluye impuestos. Sujeta a cambio sin previo aviso. Aplican restricciones.</div></div><div class="offer-art" aria-label="Anuncio de promoción inmobiliaria"><div class="offer-art-inner"><div class="offer-house" aria-hidden="true"><img src="LOGO.png" width="50"></div><strong>A.D.V<br>INMOBILIARIA</strong><span>Seriedad · Profesionalismo · Experiencia</span><span class="offer-accent">ESCRITURACIÓN GRATIS*</span></div></div></article></div></section>
+    <section class="about-section" id="nosotros"><div class="wrap about-layout"><div class="about-copy"><span class="kicker">Conoce A.D.V.</span><h2>El hogar de tus sueños está más cerca de lo que crees. 🏡</h2><p class="about-lead">En A.D.V. Agencia Inmobiliaria queremos ayudarte a dar el siguiente gran paso.</p><p>Ya sea que busques tu primera casa, un espacio más amplio para tu familia o una inversión inteligente, queremos ayudarte a encontrar opciones inmobiliarias que se ajusten a tus necesidades. Te acompañamos durante el proceso con la confianza, la claridad y la seguridad que mereces.</p></div><div class="about-values"><span class="about-mark">A.D.V. · AGENCIA INMOBILIARIA</span><h3>Una empresa que busca acercarte a nuevas oportunidades</h3><p>Somos una empresa seria y legalmente constituida, creada con la finalidad de ofrecer al público ofertas inmobiliarias sin sobreprecios ni comisiones que incrementen de manera indiscriminada el precio de los inmuebles. Nuestro propósito es que puedas conocer las opciones disponibles y evaluar cada oportunidad con información clara.</p><div class="about-legal"><strong>ALIANZA DIGITAL VENDEO S.A. DE C.V.</strong>R.F.C. ADV250210DJ5</div></div></div></section>
     <section class="section process" id="proceso"><div class="wrap"><span class="kicker">Un proceso claro</span><h2>De la búsqueda a una decisión informada</h2><p class="section-cont">Cada inmueble requiere una revisión individual. Estos pasos son una guía general y pueden variar según la operación.</p><div class="process-grid">
       <article class="process-card"><span class="step">PASO 01</span><h3>Define tus objetivos</h3><p>Cuéntanos tu presupuesto, ubicación preferida y qué buscas lograr con tu inversión.</p></article>
       <article class="process-card"><span class="step">PASO 02</span><h3>Revisa la información</h3><p>Solicita documentos, situación jurídica, condiciones de ocupación, costos y plazos por escrito.</p></article>
